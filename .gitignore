@@ -188,3 +188,13 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 ModelManifest.xml
+/src/WebApp/wwwroot/js
+/src/WebApp/wwwroot/css
+/src/WebApp/wwwroot/lib/bootstrap
+/src/WebApp/wwwroot/lib/angular-route
+/src/WebApp/wwwroot/lib/angular-bootstrap
+/src/WebApp/wwwroot/lib/angular
+/src/WebApp/wwwroot/lib/underscore
+/src/WebApp/wwwroot/lib/respond
+/src/WebApp/wwwroot/lib/modernizr
+/src/WebApp/wwwroot/index.html

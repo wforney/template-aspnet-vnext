@@ -1,0 +1,49 @@
+{
+    "name": "WebApp",
+    "version": "0.0.0",
+    "authors": [ "William Forney" ],
+    "license": "MIT",
+    "private": true,
+    "dependencies": {
+        "angular": "^1.3.3",
+        "angular-bootstrap": "^0.12.0",
+        "angular-route": "^1.3.3",
+        "bootstrap": "^3.3.1",
+        "jquery": "^2.1.1",
+        "jquery-validation": "^1.13.1",
+        "modernizr": "^2.8.3",
+        "respond": "^1.4.2",
+        "underscore": "^1.7.0"
+    },
+    "devDependencies": {
+        "dt-angular": "^1.2.16",
+        "dt-angular-ui-bootstrap": "*",
+        "dt-jquery": "^2.0.0"
+    },
+    "exportsOverride": {
+        "angular": {
+            "": "*.{js,map}"
+        },
+        "bootstrap": {
+            "js": "dist/js/*.*",
+            "css": "dist/css/*.*",
+            "fonts": "dist/fonts/*.*"
+        },
+        "jquery": {
+            "js": "jquery.{js,min.js,min.map}"
+        },
+        "jquery-validation": {
+            "": "jquery.validate.js"
+        },
+        "jquery-validation-unobtrusive": {
+            "": "jquery.validate.unobtrusive.{js,min.js}"
+        },
+        "modernizr": {
+            "": "modernizr.js"
+        },
+        "respond": {
+            "": "dest/*.*"
+        },
+        "dt-*": { }
+    }
+}
