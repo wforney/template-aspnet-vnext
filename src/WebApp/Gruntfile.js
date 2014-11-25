@@ -36,6 +36,7 @@ module.exports = function (grunt) {
         "filerev",
         "usemin",
         "htmlmin",
+        "imagemin",
         "clean:postbuild"
     ]);
 
