@@ -6,6 +6,7 @@ Click here to learn more. http://go.microsoft.com/fwlink/?LinkID=513275&clcid=0x
 module.exports = function (grunt) {
     grunt.initConfig({
         JS_FILES: "wwwroot/js/**/*.js",
+        staticFilePattern: "**/*.{js,css,map,html,htm,ico,jpg,jpeg,png,gif,eot,svg,ttf,woff}",
         pkg: grunt.file.readJSON("package.json"),
         bower: {
             install: {
@@ -121,11 +122,19 @@ module.exports = function (grunt) {
         }
     });
 
+    grunt.registerTask("ts", [
+        "tslint",
+        "tsng",
+        "typescript:build",
+        "clean:tsng"
+    ]);
+
     // This command registers the default task which will install bower packages into wwwroot/lib
     grunt.registerTask("default", [
         "clean:build",
         "bower:install",
         "copy",
+        "ts",
         "jshint",
         "ngtemplates",
         "less",

@@ -17,13 +17,10 @@
 
     public class Startup
     {
-        ////public void Configure(IApplicationBuilder app)
         public Startup(IHostingEnvironment env)
         {
             // For more information on how to configure your application, visit http://go.microsoft.com/fwlink/?LinkID=398940
-            Configuration = new Configuration()
-                .AddJsonFile("config.json")
-                .AddEnvironmentVariables();
+            Configuration = Configuration ?? new Configuration().AddJsonFile("config.json").AddEnvironmentVariables();
         }
 
         public IConfiguration Configuration { get; set; }
