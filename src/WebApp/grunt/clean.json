@@ -3,6 +3,7 @@
     "build": [
         "wwwroot/index.html",
         "wwwroot/css/**/*.css",
+        "wwwroot/img/**/*.*",
         "wwwroot/js/**/*.js",
         "wwwroot/ng-apps/**/*.js",
         ".tmp/**/*.*"

@@ -31,12 +31,12 @@ module.exports = function (grunt) {
         "less",
         "useminPrepare",
         "concat",
+        "imagemin",
         "uglify",
         "cssmin",
         "filerev",
         "usemin",
         "htmlmin",
-        "imagemin",
         "clean:postbuild"
     ]);
 
