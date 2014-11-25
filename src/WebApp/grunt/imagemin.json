@@ -1,13 +1,14 @@
 {
     "build": {
         "options": {
-            "optimizationLevel": 5
+            "optimizationLevel": 5,
+            "svgoPlugins": [ { "removeViewBox": false } ]
         },
         "files": [
             {
                 "expand": true,
                 "cwd": "img/",
-                "src": [ "img/**/*.{png,jpeg,jpg,gif,svg}" ],
+                "src": [ "**/*.{png,jpeg,jpg,gif,svg}" ],
                 "dest": "wwwroot/img/"
             }
         ]
