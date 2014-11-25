@@ -4,7 +4,7 @@
         "compress": true,
         "yuicompress": true,
         "optimization": 2,
-        "banner": "/*! <%= pkg.name %> <%= grunt.template.today(\"yyyy-mm-dd\") %> */\n",
+        "banner": "/*! <%= grunt.template.today(\"yyyy-mm-dd\") %> */\n",
         "paths": [ "less" ]
     },
     "files": {

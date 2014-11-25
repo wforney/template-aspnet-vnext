@@ -1,11 +1,4 @@
 ﻿{
     "html": [ "wwwroot/index.html" ],
-    "css": [ "wwwroot/**/*.css" ],
-    "options": {
-        "blockReplacements": {
-            "less": function(block) {
-                return "<link rel=\"stylesheet\" href=\"" + block.dest + "\">";
-            }
-        }
-    }
+    "css": [ "wwwroot/**/*.css" ]
 }

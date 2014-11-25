@@ -32,11 +32,13 @@
     "exclude": [
         "wwwroot",
         "node_modules",
-        "bower_components"
+        "bower_components",
+        "grunt"
     ],
     "packExclude": [
         "node_modules",
         "bower_components",
+        "grunt",
         "**.kproj",
         "**.user",
         "**.vspscc"

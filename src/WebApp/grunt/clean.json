@@ -4,7 +4,7 @@
         "wwwroot/index.html",
         "wwwroot/css/**/*.css",
         "wwwroot/js/**/*.js",
-        "wwwroot/ng-apps"
+        "wwwroot/ng-apps/**/*.js"
     ],
     "postbuild": [
         "wwwroot/js/app.templates*.js"

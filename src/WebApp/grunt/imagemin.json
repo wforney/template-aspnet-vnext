@@ -1,0 +1,15 @@
+{
+    "build": {
+        "options": {
+            "optimizationLevel": 5
+        },
+        "files": [
+            {
+                "expand": true,
+                "cwd": "img/",
+                "src": [ "img/**/*.{png,jpeg,jpg,gif,svg}" ],
+                "dest": "wwwroot/img/"
+            }
+        ]
+    }
+}

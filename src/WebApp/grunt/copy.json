@@ -9,7 +9,7 @@
                 "expand": true,
                 "cwd": "ng-apps/",
                 "src": [
-                    "<%= staticFilePattern %>"
+                    "**/*.{js,css,map,html,htm,ico,jpg,jpeg,png,gif,eot,svg,ttf,woff}"
                 ],
                 "dest": "wwwroot/ng-apps",
                 "options": { "force": true }

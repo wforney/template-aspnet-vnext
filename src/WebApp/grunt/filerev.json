@@ -7,7 +7,7 @@
     "build": {
         "src": [
             "wwwroot/img/**/*.{gif,jpg,jpeg,png,webp,svg}",
-            "<%= JS_FILES %>",
+            "wwwroot/js/**/*.js",
             "wwwroot/css/**/*.css",
             "wwwroot/lib/**/*.{js,css,eot,svg,ttf,woff}"
         ]
