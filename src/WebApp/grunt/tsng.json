@@ -1,0 +1,17 @@
+﻿{
+    "options": {
+        "extension": ".ng.ts"
+    },
+    "dev": {
+        "files": [
+            {
+                "src": [ "ng-apps/components/**/*.ts", "ng-apps/WebApp.Web/**/*.ts", "!**/*.ng.ts" ],
+                "dest": "ng-apps"
+            },
+            {
+                "src": ["ng-apps/components/**/*.ts", "ng-apps/WebApp.Admin/**/*.ts", "!**/*.ng.ts"],
+                "dest": "ng-apps"
+            }
+        ]
+    }
+}

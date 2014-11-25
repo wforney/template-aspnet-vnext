@@ -1,0 +1,11 @@
+﻿{
+    "build": {
+        "options": {
+            "removeComments": true,
+            "collapseWhitespace": true
+        },
+        "files": {
+            "wwwroot/index.html": "wwwroot/index.html"
+        }
+    }
+}

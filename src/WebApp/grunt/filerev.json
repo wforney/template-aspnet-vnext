@@ -1,0 +1,15 @@
+﻿{
+    "options": {
+        "algorithm": "md5",
+        "encoding": "utf8",
+        "length": 20
+    },
+    "build": {
+        "src": [
+            "wwwroot/img/**/*.{gif,jpg,jpeg,png,webp,svg}",
+            "wwwroot/js/**/*.js",
+            "wwwroot/css/**/*.css",
+            "wwwroot/lib/**/*.{js,css,eot,svg,ttf,woff}"
+        ]
+    }
+}

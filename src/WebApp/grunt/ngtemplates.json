@@ -1,0 +1,9 @@
+﻿{
+    "app": {
+        "src": "app/**/*.html",
+        "dest": "wwwroot/js/app.templates.js",
+        "options": {
+            "base": "wwwroot/"
+        }
+    }
+}

@@ -1,0 +1,7 @@
+﻿{
+    "files": [ "wwwroot/js/**/*.js" ],
+    "options": {
+        "es5": true,
+        "laxcomma": true
+    }
+}

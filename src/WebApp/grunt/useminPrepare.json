@@ -1,0 +1,7 @@
+﻿{
+    "html": [ "wwwroot/index.html" ],
+    "options": {
+        "dest": "wwwroot",
+        "root": "wwwroot"
+    }
+}
