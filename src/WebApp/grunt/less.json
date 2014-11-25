@@ -1,0 +1,17 @@
+﻿{
+    "options": {
+        "cleancss":  true,
+        "compress": true,
+        "yuicompress": true,
+        "optimization": 2,
+        "banner": "/*! <%= pkg.name %> <%= grunt.template.today(\"yyyy-mm-dd\") %> */\n",
+        "paths": [ "less" ]
+    },
+    "files": {
+        "expand": true,
+        "cwd": "less/",
+        "src": [ "site.less" ],
+        "dest": "wwwroot/css/",
+        "ext": ".css"
+    }
+}

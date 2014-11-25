@@ -1,0 +1,7 @@
+﻿{
+    "files": [ "<%= JS_FILES %>" ],
+    "options": {
+        "es5": true,
+        "laxcomma": true
+    }
+}

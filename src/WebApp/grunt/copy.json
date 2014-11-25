@@ -1,0 +1,19 @@
+﻿{
+    "build": {
+        "files": [
+            {
+                "src": "index.html",
+                "dest": "wwwroot/"
+            },
+            {
+                "expand": true,
+                "cwd": "ng-apps/",
+                "src": [
+                    "<%= staticFilePattern %>"
+                ],
+                "dest": "wwwroot/ng-apps",
+                "options": { "force": true }
+            }
+        ]
+    }
+}
