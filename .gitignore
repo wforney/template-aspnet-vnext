@@ -190,8 +190,9 @@ _Pvt_Extensions/
 ModelManifest.xml
 
 /src/WebApp/wwwroot/index.html
-/src/WebApp/wwwroot/js
 /src/WebApp/wwwroot/css
+/src/WebApp/wwwroot/img
+/src/WebApp/wwwroot/js
 /src/WebApp/wwwroot/lib/angular
 /src/WebApp/wwwroot/lib/angular-animate
 /src/WebApp/wwwroot/lib/angular-bootstrap
