@@ -10,6 +10,9 @@ module.exports = function (grunt) {
         pkg: grunt.file.readJSON("package.json")
     });
 
+    // ReSharper disable once UseOfImplicitGlobalInFunctionScope
+    require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
+
     grunt.registerTask("ts", [
         "tslint",
         "tsng",
@@ -35,9 +38,6 @@ module.exports = function (grunt) {
         "htmlmin",
         "clean:postbuild"
     ]);
-
-    // ReSharper disable once UseOfImplicitGlobalInFunctionScope
-    require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
 
     require("load-grunt-config")(grunt);
 };
