@@ -4,7 +4,7 @@
             "collapseBooleanAttributes": true,
             "collapseWhitespace": true,
             "removeAttributeQuotes": true,
-            "removeComments": true,
+            "removeComments": false,
             "removeEmptyAttributes": true,
             "removeRedundantAttributes": true,
             "removeScriptTypeAttributes": true,
