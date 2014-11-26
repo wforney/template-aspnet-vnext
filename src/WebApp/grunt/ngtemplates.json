@@ -1,9 +1,12 @@
 ﻿{
     "app": {
-        "src": "app/**/*.html",
+        "cwd": "app",
+        "src": "**/*.html",
         "dest": "wwwroot/js/app.templates.js",
         "options": {
-            "base": "wwwroot/"
+            "base": "wwwroot/",
+            "usemin": "js/app.js",
+            "htmlmin": "<%= htmlmin.build.options %>"
         }
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace EmptyWebApp
+﻿namespace WebApp
 {
     using System;
     using Microsoft.AspNet.Builder;
