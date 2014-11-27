@@ -15,29 +15,23 @@ module.exports = function (grunt) {
 
     grunt.registerTask("ts", [
         "tslint",
-        "tsng",
-        "typescript:build",
-        "clean:tsng"
+        "typescript:build"
     ]);
 
     // This command registers the default task which will install bower packages into wwwroot/lib
     grunt.registerTask("default", [
-        "clean:build",
+        "clean",
         "bower:install",
-        "copy",
         "jshint",
         "ts",
         "less",
         "useminPrepare",
-        "ngtemplates",
-        "concat",
         "imagemin",
         "uglify",
         "cssmin",
         "filerev",
         "usemin",
-        "htmlmin",
-        "clean:postbuild"
+        "htmlmin"
     ]);
 
     require("load-grunt-config")(grunt);

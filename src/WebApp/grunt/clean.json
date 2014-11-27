@@ -5,11 +5,6 @@
         "wwwroot/css/**/*.css",
         "wwwroot/img/**/*.*",
         "wwwroot/js/**/*.js",
-        "wwwroot/ng-apps/**/*.js",
         ".tmp/**/*.*"
-    ],
-    "postbuild": [
-        "wwwroot/js/app.templates*.js"
-    ],
-    "tsng": [ "ng-apps/**/*.ng.ts" ]
+    ]
 }

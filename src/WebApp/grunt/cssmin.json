@@ -1,0 +1,16 @@
+{
+    "build": {
+        "options": {
+            "banner": "/*! <%= grunt.template.today(\"yyyy-mm-dd\") %> */\n"
+        },
+        "files": [
+            {
+                "expand": true,
+                "cwd": "wwwroot/css/",
+                "src": [ "**/*.css", "!**/*.min.css" ],
+                "dest": "wwwroot/css/",
+                "ext": ".min.css"
+            }
+        ]
+    }
+}
