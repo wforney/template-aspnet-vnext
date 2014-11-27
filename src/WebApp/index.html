@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="apple-touch-icon.png" rel="apple-touch-icon" />
     <!-- build:css css/app.css -->
-    <link href="/lib/bootstrap/bootstrap.css" rel="stylesheet" />
-    <link href="/lib/bootstrap/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/lib/bootstrap/bootstrap.css" rel="stylesheet"/>
+    <link href="/lib/bootstrap/bootstrap-theme.css" rel="stylesheet"/>
+    <link href="/lib/font-awesome/font-awesome.css" rel="stylesheet" />
     <link href="/lib/durandal/css/durandal.css" rel="stylesheet" />
     <link href="/css/site.css" rel="stylesheet" />
     <!-- endbuild -->
@@ -21,15 +22,7 @@
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <header></header>
-    <div>
-        <section>
-
-        </section>
-        <footer></footer>
-    </div>
-    <!-- build:js js/app.js -->
-    <script src="/js/ts.js"></script>
-    <!-- endbuild -->
+    <div id="applicationHost"></div>
+    <script src="/lib/requirejs/require.js" data-main="js/ts"></script>
 </body>
 </html>

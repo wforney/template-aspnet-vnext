@@ -11,6 +11,7 @@
     "d3": "^3.4.13",
     "d3pie": "^0.1.4",
     "durandal": "^2.1.0",
+    "durandal-almond": "^0.2.0",
     "jquery": "^2.1.1",
     "jquery-validation": "^1.13.1",
     "modernizr": "^2.8.3",
