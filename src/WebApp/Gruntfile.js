@@ -21,7 +21,8 @@ module.exports = function (grunt) {
 
     // This command registers the default task which will install bower packages into wwwroot/lib
     grunt.registerTask("default", [
-        "clean",
+        "clean:build",
+        "copy",
         "bower:install",
         "ts",
         "less",
@@ -33,7 +34,8 @@ module.exports = function (grunt) {
         "durandaljs",
         "filerev",
         "usemin",
-        "htmlmin:build"
+        "htmlmin:build",
+        "clean:postbuild"
     ]);
 
     require("load-grunt-config")(grunt);

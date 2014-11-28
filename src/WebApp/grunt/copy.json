@@ -1,0 +1,10 @@
+{
+    "build": {
+        "files": [
+            {
+                "src": "index.html",
+                "dest": "wwwroot/"
+            }
+        ]
+    }
+}

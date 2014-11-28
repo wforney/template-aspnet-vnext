@@ -5,7 +5,11 @@
         "wwwroot/css/**/*.css",
         "wwwroot/img/**/*.*",
         "wwwroot/js/**/*.js",
-        "wwwroot/js/**/*.map",
+        "wwwroot/js/**/*.html",
+        "wwwroot/js/**/*.map"
+    ],
+    "postbuild": [
+        "wwwroot/js/app",
         ".tmp/**/*.*"
     ]
 }

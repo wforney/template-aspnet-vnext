@@ -3,8 +3,7 @@
         "options": {
             "module": "amd",
             "target": "es5",
-            "sourcemap": true,
-            "declaration": true
+            "sourcemap": true
         },
         "files": [
             {
