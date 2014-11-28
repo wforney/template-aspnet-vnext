@@ -23,17 +23,17 @@ module.exports = function (grunt) {
     grunt.registerTask("default", [
         "clean",
         "bower:install",
-        "jshint",
         "ts",
         "less",
         "useminPrepare",
         "imagemin",
         "uglify",
         "cssmin",
+        "htmlmin:predurandal",
         "durandaljs",
         "filerev",
         "usemin",
-        "htmlmin"
+        "htmlmin:build"
     ]);
 
     require("load-grunt-config")(grunt);

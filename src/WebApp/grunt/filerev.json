@@ -9,7 +9,8 @@
             "wwwroot/img/**/*.{gif,jpg,jpeg,png,webp,svg}",
             "wwwroot/js/**/*.js",
             "wwwroot/css/**/*.css",
-            "wwwroot/lib/**/*.{js,css,eot,svg,ttf,woff}"
+            "wwwroot/lib/**/*.{js,css,eot,svg,ttf,woff}",
+            "wwwroot/js/app/views/*.html"
         ]
     }
 }

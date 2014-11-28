@@ -3,12 +3,13 @@
         "options": {
             "module": "amd",
             "target": "es5",
-            "sourcemap": true
+            "sourcemap": true,
+            "declaration": true
         },
         "files": [
             {
                 "src": [ "app/**/*.ts" ],
-                "dest": "wwwroot/js/ts.js"
+                "dest": "wwwroot/js"
             }
         ]
     }
