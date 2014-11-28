@@ -4,7 +4,8 @@
         "wwwroot/index.html",
         "wwwroot/css/**/*.css",
         "wwwroot/img/**/*.*",
-        "wwwroot/js/**/*.js",
+        "wwwroot/js/ts*.js",
+        "wwwroot/js/main-built*.js",
         ".tmp/**/*.*"
     ]
 }

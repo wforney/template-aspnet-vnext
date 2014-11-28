@@ -1,0 +1,14 @@
+﻿{
+    "options": {
+        "baseDir": "wwwroot/js",
+        "main": "main.js",
+        "verbose": true
+    },
+    "build": {
+        "options": {
+            "output": "wwwroot/js/main-built.js",
+            "almond": true,
+            "minify": false
+        }
+    }
+}

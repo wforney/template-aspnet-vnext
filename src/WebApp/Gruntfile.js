@@ -30,7 +30,7 @@ module.exports = function (grunt) {
         "imagemin",
         "uglify",
         "cssmin",
-        "requirejs",
+        "durandaljs",
         "filerev",
         "usemin",
         "htmlmin"
