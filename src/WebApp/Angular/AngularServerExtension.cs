@@ -6,7 +6,7 @@
     using Microsoft.AspNet.FileSystems;
     using Microsoft.AspNet.Http;
     using Microsoft.AspNet.StaticFiles;
-
+    /*
     public static class AngularServerExtension
     {
         public static IApplicationBuilder UseAngularServer(this IApplicationBuilder builder, string rootPath, string entryPath)
@@ -27,4 +27,5 @@
             return builder.Use(next => new AngularServerMiddleware(next, env, options).Invoke);
         }
     }
+    */
 }
