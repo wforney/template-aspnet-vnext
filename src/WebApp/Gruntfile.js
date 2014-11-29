@@ -27,6 +27,7 @@ module.exports = function (grunt) {
         "ts",
         "less",
         "useminPrepare",
+        "concat",
         "imagemin",
         "uglify",
         "cssmin",
