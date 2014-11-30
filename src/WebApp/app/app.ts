@@ -2,18 +2,21 @@
 /// <reference path="../typings/angularjs/angular.d.ts" />
 /// <reference path="../typings/angularjs/angular-resource.d.ts" />
 /// <reference path="../typings/angularjs/angular-route.d.ts" />
+
 // Avoid `console` errors in browsers that lack a console.
 (function() {
     var method;
-    var noop = function () {};
+    var noop = function () {
+        // noop
+    };
     var methods = [
-        'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
-        'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
-        'markTimeline', 'profile', 'profileEnd', 'table', 'time', 'timeEnd',
-        'timeStamp', 'trace', 'warn'
+        "assert", "clear", "count", "debug", "dir", "dirxml", "error",
+        "exception", "group", "groupCollapsed", "groupEnd", "info", "log",
+        "markTimeline", "profile", "profileEnd", "table", "time", "timeEnd",
+        "timeStamp", "trace", "warn"
     ];
     var length = methods.length;
-    var console = (window.console = window.console || {});
+    var console = (window.console = window.console || <any>{});
 
     while (length--) {
         method = methods[length];
@@ -24,6 +27,17 @@
         }
     }
 }());
+
+$(document).ready(function () {
+    $(".alert").addClass("in").fadeOut(4500);
+
+    /* swap open/close side menu icons */
+    $("[data-toggle=collapse]").click(function () {
+        // toggle icon
+        $(this).find("i").toggleClass("glyphicon-chevron-right glyphicon-chevron-down");
+    });
+});
+
 angular.module(
     "app", [
         "ngResource",

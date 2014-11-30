@@ -1,14 +1,22 @@
 ﻿/// <reference path="../../typings/angularjs/angular.d.ts" />
-angular.module("app").controller("home", home);
+(function (angular) {
+    angular.module("app").controller("home", home);
 
-home.$inject = ["$scope"];
+    home.$inject = ["$scope", "$rootScope"];
 
-function home($scope: any) {
-    $scope.title = "home";
+    function home($scope: any, $rootScope: any) {
+        $scope.title = "home";
 
-    function activate() {
-        console.log("TODO: insert code here");
+        // Setup root scope items for header and footer shell.
+        $rootScope.footer = {
+            year: new Date().getFullYear().toString(),
+            company: "Your Company"
+        };
+
+        function activate() {
+            console.log("TODO: insert code here");
+        }
+
+        activate();
     }
-
-    activate();
-}
+} (angular));

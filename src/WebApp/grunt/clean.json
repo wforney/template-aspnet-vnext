@@ -5,6 +5,7 @@
         "wwwroot/css/**/*.css",
         "wwwroot/img/**/*.*",
         "wwwroot/js/**/*.js",
+        "wwwroot/lib/**",
         "wwwroot/ng-apps/**/*.js",
         ".tmp/**/*.*"
     ],

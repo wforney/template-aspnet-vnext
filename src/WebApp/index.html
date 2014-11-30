@@ -2,7 +2,9 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="app"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="app"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="app"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="app"> <!--<![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="en" xmlns:ng="http://angularjs.org" id="ng-app" ng-app="app">
+<!--<![endif]-->
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,6 +14,7 @@
     <!-- build:css css/app.css -->
     <link href="/lib/bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="/lib/bootstrap/bootstrap-theme.css" rel="stylesheet" />
+    <link href="/lib/font-awesome/font-awesome.css" rel="stylesheet" />
     <link href="/css/site.css" rel="stylesheet" />
     <!-- endbuild -->
     <!-- build:js js/head.js -->
@@ -23,12 +26,29 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
     <header ng-include src="'views/header.html'"></header>
-    <div>
-        <section>
-            <ng:view></ng:view>
-        </section>
-        <footer ng-include src="'views/footer.html'"></footer>
+
+    <ng:view></ng:view>
+
+    <footer class="text-center" ng-include src="'views/footer.html'"></footer>
+
+    <div class="modal" id="addWidgetModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                    <h4 class="modal-title">Add Widget</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Add a widget stuff here..</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="#" data-dismiss="modal" class="btn">Close</a>
+                    <a href="#" class="btn btn-primary">Save changes</a>
+                </div>
+            </div>
+        </div>
     </div>
+
     <!-- build:js js/app.js -->
     <script src="/lib/angular/angular.js"></script>
     <script src="/lib/angular-animate/angular-animate.js"></script>

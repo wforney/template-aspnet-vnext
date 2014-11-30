@@ -13,6 +13,15 @@
                 ],
                 "dest": "wwwroot/ng-apps",
                 "options": { "force": true }
+            },
+            {
+                "expand": true,
+                "cwd": "wwwroot/lib/bootstrap/",
+                "src": [
+                    "glyphicons*.{woff,woff2,eot,ttf,svg}"
+                ],
+                "dest": "wwwroot/fonts",
+                "options": { "force": true }
             }
         ]
     }
