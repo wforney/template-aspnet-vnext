@@ -2,12 +2,12 @@
     "options": { "force": true },
     "build": [
         "wwwroot/index.html",
-        "wwwroot/css/**/*.css",
-        "wwwroot/img/**/*.*",
-        "wwwroot/js/**/*.js",
+        "wwwroot/css/**",
+        "wwwroot/img/**",
+        "wwwroot/js/**",
         "wwwroot/lib/**",
-        "wwwroot/ng-apps/**/*.js",
-        ".tmp/**/*.*"
+        "wwwroot/ng-apps/**",
+        ".tmp/**"
     ],
     "postbuild": [
         "wwwroot/js/app.templates*.js"

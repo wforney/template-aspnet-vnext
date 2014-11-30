@@ -2,16 +2,10 @@
 (function (angular) {
     angular.module("app").controller("home", home);
 
-    home.$inject = ["$scope", "$rootScope"];
+    home.$inject = ["$scope"];
 
-    function home($scope: any, $rootScope: any) {
+    function home($scope: any) {
         $scope.title = "home";
-
-        // Setup root scope items for header and footer shell.
-        $rootScope.footer = {
-            year: new Date().getFullYear().toString(),
-            company: "Your Company"
-        };
 
         function activate() {
             console.log("TODO: insert code here");

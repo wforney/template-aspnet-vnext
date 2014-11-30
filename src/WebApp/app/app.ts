@@ -4,7 +4,7 @@
 /// <reference path="../typings/angularjs/angular-route.d.ts" />
 
 // Avoid `console` errors in browsers that lack a console.
-(function() {
+(function () {
     var method;
     var noop = function () {
         // noop
@@ -26,7 +26,7 @@
             console[method] = noop;
         }
     }
-}());
+} ());
 
 $(document).ready(function () {
     $(".alert").addClass("in").fadeOut(4500);
@@ -45,11 +45,26 @@ angular.module(
     ]).config([
         "$routeProvider",
         "$logProvider",
-        ($routeProvider: ng.route.IRouteProvider, $logProvider: ng.ILogProvider) => {
+        (
+            $routeProvider: ng.route.IRouteProvider,
+            $logProvider: ng.ILogProvider
+            ) => {
+
             $logProvider.debugEnabled(true);
 
             $routeProvider
                 .when("/", { templateUrl: "views/home.html", controller: "home" })
                 .otherwise({ redirectTo: "/" });
+        }
+    ]).run([
+        "$rootScope",
+        ($rootScope) => {
+            $rootScope.$apply(() => {
+                // Setup root scope items for header and footer shell.
+                $rootScope.footer = {
+                    year: (new Date().getFullYear().toString()),
+                    company: "Your Company"
+                };
+            });
         }
     ]);
