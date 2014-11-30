@@ -1,5 +1,0 @@
-﻿{
-    "options": {
-        "banner": "/*! <%= grunt.template.today(\"yyyy-mm-dd\") %> */\n"
-    }
-}
