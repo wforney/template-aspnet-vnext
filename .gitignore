@@ -205,8 +205,10 @@ ModelManifest.xml
 /src/WebApp/wwwroot/lib/bootstrap
 /src/WebApp/wwwroot/lib/d3
 /src/WebApp/wwwroot/lib/d3pie
+/src/WebApp/wwwroot/lib/durandal
 /src/WebApp/wwwroot/lib/jquery
 /src/WebApp/wwwroot/lib/jquery-validation
 /src/WebApp/wwwroot/lib/modernizr
+/src/WebApp/wwwroot/lib/requirejs
 /src/WebApp/wwwroot/lib/respond
 /src/WebApp/wwwroot/lib/underscore
