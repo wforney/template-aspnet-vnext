@@ -25,7 +25,7 @@ module.exports = function (grunt) {
         "clean:build",
         "bower:install",
         "copy",
-        "jshint",
+        //"jshint",
         "ts",
         "less",
         "useminPrepare",
