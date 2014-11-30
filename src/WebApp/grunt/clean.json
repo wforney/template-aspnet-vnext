@@ -1,4 +1,4 @@
-﻿{
+{
     "options": { "force": true },
     "build": [
         "wwwroot/index.html",
@@ -9,7 +9,6 @@
         "wwwroot/js/**/*.map"
     ],
     "postbuild": [
-        "wwwroot/js/app",
         ".tmp/**/*.*"
     ]
 }

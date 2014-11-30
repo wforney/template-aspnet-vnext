@@ -1,4 +1,4 @@
-﻿{
+{
     "options": {
         "baseDir": "wwwroot/js/app",
         "main": "main.js",
@@ -6,7 +6,7 @@
     },
     "build": {
         "options": {
-            "output": "wwwroot/js/main-built.js",
+            "output": "wwwroot/js/app/main-built.js",
             "almond": true,
             "minify": true
         }

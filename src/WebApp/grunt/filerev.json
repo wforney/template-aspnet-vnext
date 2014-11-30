@@ -1,4 +1,4 @@
-﻿{
+{
     "options": {
         "algorithm": "md5",
         "encoding": "utf8",
@@ -10,6 +10,8 @@
             "wwwroot/js/**/*.js",
             "wwwroot/css/**/*.css",
             "wwwroot/lib/**/*.{js,css,eot,svg,ttf,woff}",
+            "!wwwroot/lib/durandal/**",
+            "!wwwroot/lib/durandal-almond/**",
             "wwwroot/js/app/views/*.html"
         ]
     }
