@@ -192,6 +192,7 @@ ModelManifest.xml
 /src/WebApp/wwwroot/index.html
 /src/WebApp/wwwroot/css
 /src/WebApp/wwwroot/img
+/src/WebApp/wwwroot/fonts/glyphicons*.*
 /src/WebApp/wwwroot/js
 /src/WebApp/wwwroot/lib/angular
 /src/WebApp/wwwroot/lib/angular-animate
@@ -206,6 +207,7 @@ ModelManifest.xml
 /src/WebApp/wwwroot/lib/d3
 /src/WebApp/wwwroot/lib/d3pie
 /src/WebApp/wwwroot/lib/durandal
+/src/WebApp/wwwroot/lib/font-awesome
 /src/WebApp/wwwroot/lib/jquery
 /src/WebApp/wwwroot/lib/jquery-validation
 /src/WebApp/wwwroot/lib/knockout.js
