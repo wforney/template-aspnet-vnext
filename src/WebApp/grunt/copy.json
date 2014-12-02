@@ -1,8 +1,8 @@
-﻿{
+{
     "build": {
         "files": [
             {
-                "src": "index.html",
+                "src": "*.html",
                 "dest": "wwwroot/"
             },
             {
@@ -21,6 +21,24 @@
                     "glyphicons*.{woff,woff2,eot,ttf,svg}"
                 ],
                 "dest": "wwwroot/fonts",
+                "options": { "force": true }
+            },
+            {
+                "expand": true,
+                "cwd": "bower_components/lightbox/css",
+                "src": [
+                    "*.css"
+                ],
+                "dest": "wwwroot/css",
+                "options": { "force": true }
+            },
+            {
+                "expand": true,
+                "cwd": "bower_components/lightbox/img",
+                "src": [
+                    "*.{gif,png}"
+                ],
+                "dest": "wwwroot/img",
                 "options": { "force": true }
             }
         ]

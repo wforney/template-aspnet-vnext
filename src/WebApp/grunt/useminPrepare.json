@@ -1,5 +1,5 @@
-﻿{
-    "html": [ "wwwroot/index.html" ],
+{
+    "html": [ "wwwroot/*.html" ],
     "options": {
         "dest": "wwwroot",
         "root": "wwwroot"

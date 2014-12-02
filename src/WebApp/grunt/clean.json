@@ -1,7 +1,7 @@
-﻿{
+{
     "options": { "force": true },
     "build": [
-        "wwwroot/index.html",
+        "wwwroot/*.html",
         "wwwroot/css/**",
         "wwwroot/img/**",
         "wwwroot/js/**",
@@ -10,7 +10,10 @@
         ".tmp/**"
     ],
     "postbuild": [
-        "wwwroot/js/app.templates*.js"
+        "wwwroot/js/app.templates*.js",
+        "wwwroot/css/lightbox.*.css",
+        "wwwroot/css/screen.*.css",
+        "wwwroot/css/site.*.css"
     ],
     "tsng": [ "ng-apps/**/*.ng.ts" ]
 }
