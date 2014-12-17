@@ -3,11 +3,23 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+	Principal Developer: William Forney
+	Contact: bill [at] improvgroup.com
+	Twitter: @wforney
+	From: Mount Vernon, Washington, USA
 
 # THANKS
 
-    <name>
+    Content Creator: Tracy Evans
+	Twitter: @
+	Location: Mount Vernon, Washington, USA
+
+# SITE
+
+	Last update: 2014/12/14
+	Language: English
+	Doctype: HTML5
+	IDE: Visual Studio 2015
 
 # TECHNOLOGY COLOPHON
 

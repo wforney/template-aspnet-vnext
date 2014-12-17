@@ -7,6 +7,7 @@
         "email": "bill@billforney.com",
         "url": "http://www.billforney.com"
     },
+    "readme": "../../README.md",
     "devDependencies": {
         "bower": "^1.3.12",
         "grunt": "^0.4.5",
