@@ -236,6 +236,7 @@
     <link rel="dns-prefetch" href="//www.improvgroup.com" />
 
     <!-- build:css css/app.css -->
+    <link href="/lib/bootstrap/bootstrap.css" rel="stylesheet" />
     <link href="/css/lightbox.css" rel="stylesheet" />
     <link href="/css/site.css" rel="stylesheet" />
     <!-- endbuild -->
@@ -243,35 +244,40 @@
     <!-- build:js js/head.js -->
     <script src="/lib/modernizr/modernizr.js"></script>
     <!-- endbuild -->
-    <script src="http://www.google-analytics.com/urchin.js"></script>
 </head>
 
 <body>
     <!--[if lte IE 9]><p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p><![endif]-->
     <div class="container">
         <header>
-            <a href="index.html" title="Tulip INN"><img alt="Tulip INN" class="logo" height="72" src="img/tulip-inn-logo.gif" width="220" /></a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="accommodations.html" title="Accommodations">Accommodations</a>
-                    </li>
-                    <li>
-                        <a href="amenities.html" title="Amenities">Amenities</a>
-                    </li>
-                    <li>
-                        <a href="local_attractions.html" title="Local Attractions">Local Attractions</a>
-                    </li>
-                    <li>
-                        <a href="location.html" title="Location">Location</a>
-                    </li>
-                    <li>
-                        <a href="reservations.html" title="Reservations">Reservations</a>
-                    </li>
-                    <li>
-                        <a href="https://gc.synxis.com/rez.aspx?Hotel=12254&Chain=5457&template=GCF&shell=GCF" onclick="javascript:urchinTracker('/outgoing/reservations_synxis_com');" target="_blank">Book Now</a>
-                    </li>
-                </ul>
+            <nav id="top-nav" class="navbar navbar-inverse navbar-static-top">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="index.html" title="Tulip INN"><img alt="Tulip INN" class="logo" height="72" src="img/tulip-inn-logo.gif" width="220" /></a>
+                    </div>
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li>
+                                <a href="accommodations.html" title="Accommodations"><!--<i class="glyphicon glyphicon-home"></i>--> Accommodations</a>
+                            </li>
+                            <li>
+                                <a href="amenities.html" title="Amenities"><!--<i class="glyphicon glyphicon-briefcase"></i>--> Amenities</a>
+                            </li>
+                            <li>
+                                <a href="local_attractions.html" title="Local Attractions"><!--<i class="glyphicon glyphicon-camera"></i>--> Local Attractions</a>
+                            </li>
+                            <li>
+                                <a href="location.html" title="Location"><!--<i class="glyphicon glyphicon-globe"></i>--> Location</a>
+                            </li>
+                            <li>
+                                <a href="reservations.html" title="Reservations"><!--<i class="glyphicon glyphicon-earphone"></i>--> Reservations</a>
+                            </li>
+                            <li>
+                                <a href="https://gc.synxis.com/rez.aspx?Hotel=12254&Chain=5457&template=GCF&shell=GCF" onclick="javascript:urchinTracker('/outgoing/reservations_synxis_com');" target="_blank"><!--<i class="glyphicon glyphicon-calendar"></i>--> Book Now</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
         </header>
 
@@ -293,6 +299,7 @@
     </div>
     <!-- build:js js/app.js -->
     <script src="/lib/jquery/jquery.js"></script>
+    <script src="/lib/bootstrap/bootstrap.js"></script>
     <script src="/lib/lightbox/lightbox.js"></script>
     <script src="/js/ts.js"></script>
     <!-- endbuild -->

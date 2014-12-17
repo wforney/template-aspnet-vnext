@@ -53,6 +53,6 @@
         }
     },
     "files": {
-        "src": [ "app/**/*.ts", "ng-apps/**/*.ts", "!**/*.ng.ts" ]
+        "src": [ "app/**/*.ts", "ng-apps/**/*.ts", "!**/*.ng.ts", "!app/**/urchin.ts" ]
     }
 }
