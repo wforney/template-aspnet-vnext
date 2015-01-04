@@ -15,7 +15,7 @@
                 "expand": true,
                 "cwd": "app/views/",
                 "src": [ "**/*.html" ],
-                "dest": "wwwroot/js/app/views/"
+                "dest": ".tmp/js/app/views/"
             }
         ]
     },
@@ -31,7 +31,7 @@
             "removeStyleLinkTypeAttributes": true
         },
         "files": {
-            "wwwroot/index.html": "wwwroot/index.html"
+            ".tmp/index.html": ".tmp/index.html"
         }
     }
 }

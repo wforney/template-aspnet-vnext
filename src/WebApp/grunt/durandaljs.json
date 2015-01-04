@@ -1,12 +1,12 @@
 {
     "options": {
-        "baseDir": "wwwroot/js/app",
+        "baseDir": ".tmp/js/app",
         "main": "main.js",
         "verbose": true
     },
     "build": {
         "options": {
-            "output": "wwwroot/js/app/main-built.js",
+            "output": ".tmp/js/app/main-built.js",
             "almond": true,
             "minify": true
         }

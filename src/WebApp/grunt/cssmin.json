@@ -6,9 +6,9 @@
         "files": [
             {
                 "expand": true,
-                "cwd": "wwwroot/css/",
+                "cwd": ".tmp/css/",
                 "src": [ "**/*.css", "!**/*.min.css" ],
-                "dest": "wwwroot/css/",
+                "dest": ".tmp/css/",
                 "ext": ".min.css"
             }
         ]

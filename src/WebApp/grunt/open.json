@@ -1,0 +1,8 @@
+{
+    "build": {
+        "path": "http://localhost:<%= connect.dev.options.port %>/_SpecRunner.html"
+    },
+    "release": {
+        "path": "http://localhost:<%= connect.build.options.port %>"
+    }
+}

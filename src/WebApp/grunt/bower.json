@@ -1,7 +1,7 @@
 ﻿{
     "install": {
         "options": {
-            "targetDir": "wwwroot/lib",
+            "targetDir": ".tmp/lib",
             "layout": "byComponent",
             "cleanTargetDir": true
         }

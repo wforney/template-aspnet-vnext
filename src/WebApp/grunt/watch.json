@@ -1,10 +1,21 @@
-﻿{
+{
     "typescript": {
-        "files": ["app/**/*.ts"],
-        "tasks": ["ts"]
+        "files": [ "app/**/*.ts" ],
+        "tasks": [ "tslint", "typescript" ]
     },
     "bower": {
-        "files": ["bower_components/**/*.*"],
-        "tasks": ["bower:install"]
+        "files": [ "bower_components/**/*.*" ],
+        "tasks": [ "bower:install" ]
+    },
+    "release": {
+        "files": [ ".tmp/**/*.js" ],
+        "tasks": [ "jasmine:release" ]
+    },
+    "build": {
+        "files": [ "test/specs/dev/**/*spec.js", ".tmp/**/*.js" ],
+        "tasks": [ "jasmine:build" ]
+    },
+    "options": {
+        "livereload": true
     }
 }

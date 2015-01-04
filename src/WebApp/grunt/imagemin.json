@@ -9,7 +9,7 @@
                 "expand": true,
                 "cwd": "img/",
                 "src": [ "**/*.{png,jpeg,jpg,gif,svg}" ],
-                "dest": "wwwroot/img/"
+                "dest": ".tmp/img/"
             }
         ]
     }

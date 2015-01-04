@@ -1,7 +1,7 @@
 ﻿{
-    "html": [ "wwwroot/index.html" ],
+    "html": [ ".tmp/index.html" ],
     "options": {
-        "dest": "wwwroot",
-        "root": "wwwroot"
+        "dest": ".tmp",
+        "root": ".tmp"
     }
 }

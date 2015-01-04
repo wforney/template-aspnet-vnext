@@ -1,4 +1,4 @@
 ﻿{
-    "html": [ "wwwroot/index.html" ],
-    "css": [ "wwwroot/**/*.css" ]
+    "html": [ ".tmp/index.html" ],
+    "css": [ ".tmp/**/*.css" ]
 }

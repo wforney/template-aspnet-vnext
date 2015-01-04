@@ -1,5 +1,5 @@
-﻿{
-    "files": [ "wwwroot/js/**/*.js" ],
+{
+    "files": [ ".tmp/js/**/*.js", "test/specs/**/*.js" ],
     "options": {
         "es5": true,
         "laxcomma": true

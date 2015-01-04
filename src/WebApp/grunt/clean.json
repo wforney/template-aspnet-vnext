@@ -1,14 +1,10 @@
 {
     "options": { "force": true },
     "build": [
-        "wwwroot/index.html",
-        "wwwroot/css/**/*.css",
-        "wwwroot/img/**/*.*",
-        "wwwroot/js/**/*.js",
-        "wwwroot/js/**/*.html",
-        "wwwroot/js/**/*.map"
-    ],
-    "postbuild": [
-        ".tmp/**/*.*"
+        ".tmp/**/*.*",
+        "wwwroot/css/app.*.css",
+        "wwwroot/js/head.*.js",
+        "wwwroot/js/app/main-built.*.js",
+        "wwwroot/index.html"
     ]
 }

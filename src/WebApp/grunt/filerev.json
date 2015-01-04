@@ -6,13 +6,13 @@
     },
     "build": {
         "src": [
-            "wwwroot/img/**/*.{gif,jpg,jpeg,png,webp,svg}",
-            "wwwroot/js/**/*.js",
-            "wwwroot/css/**/*.css",
-            "wwwroot/lib/**/*.{js,css,eot,svg,ttf,woff}",
-            "!wwwroot/lib/durandal/**",
-            "!wwwroot/lib/durandal-almond/**",
-            "wwwroot/js/app/views/*.html"
+            ".tmp/img/**/*.{gif,jpg,jpeg,png,webp,svg}",
+            ".tmp/js/**/*.js",
+            ".tmp/css/**/*.css",
+            ".tmp/lib/**/*.{js,css,eot,svg,ttf,woff}",
+            "!.tmp/lib/durandal/**",
+            "!.tmp/lib/durandal-almond/**",
+            ".tmp/js/app/views/*.html"
         ]
     }
 }

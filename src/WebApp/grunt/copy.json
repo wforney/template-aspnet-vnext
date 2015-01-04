@@ -3,6 +3,16 @@
         "files": [
             {
                 "src": "index.html",
+                "dest": ".tmp/"
+            }
+        ]
+    },
+    "postbuild": {
+        "files": [
+            {
+                "expand": true,
+                "cwd": ".tmp/",
+                "src": [ "css/app.*.css", "js/head*.js", "js/app/main-built*.js", "index.html" ],
                 "dest": "wwwroot/"
             }
         ]

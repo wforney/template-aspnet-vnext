@@ -10,8 +10,8 @@
     "files": {
         "expand": true,
         "cwd": "less/",
-        "src": [ "site.less" ],
-        "dest": "wwwroot/css/",
+        "src": "**/*.less",
+        "dest": ".tmp/css/",
         "ext": ".css"
     }
 }

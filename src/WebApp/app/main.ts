@@ -6,7 +6,14 @@ requirejs.config({
         "plugins": "../../lib/durandal/js/plugins",
         "transactions": "../../lib/durandal/js/transitions",
         "knockout": "../../lib/knockout.js/knockout",
+        "bootstrap": "../../lib/bootstrap/js/bootstrap",
         "jquery": "../../lib/jquery/jquery"
+    },
+    shim: {
+        "bootstrap": {
+            deps: ["jquery"],
+            exports: "jQuery"
+        }
     }
 });
 
@@ -20,13 +27,16 @@ define(
         app.title = "Web application title";
 
         app.configurePlugins({
-           router: true,
+            router: true,
             dialog: true,
             widget: true
         });
 
+        viewLocator.useConvention("templates", "templates", "templates");
+        viewLocator.viewExtension = ".html";
+        viewLocator.viewPlugin = "../../lib/requirejs-text/text";
+
         app.start().then(() => {
-            viewLocator.useConvention();
-            app.setRoot("viewmodels/shell");
+            app.setRoot("templates/shell");
         });
     });

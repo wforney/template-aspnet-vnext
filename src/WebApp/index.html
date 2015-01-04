@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link href="apple-touch-icon.png" rel="apple-touch-icon" />
     <!-- build:css css/app.css -->
-    <link href="/lib/bootstrap/bootstrap.css" rel="stylesheet"/>
-    <link href="/lib/bootstrap/bootstrap-theme.css" rel="stylesheet"/>
+    <link href="/css/ie10mobile.css" rel="stylesheet" />
+    <link href="/lib/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="/lib/bootstrap/bootstrap-theme.css" rel="stylesheet" />
     <link href="/lib/font-awesome/font-awesome.css" rel="stylesheet" />
     <link href="/lib/durandal/css/durandal.css" rel="stylesheet" />
     <link href="/css/site.css" rel="stylesheet" />
@@ -17,13 +19,29 @@
     <!-- build:js js/head.js -->
     <script src="/lib/modernizr/modernizr.js"></script>
     <!-- endbuild -->
+    <script type="text/javascript">
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+            var msViewportStyle = document.createElement("style");
+            var mq = "@@-ms-viewport{width:auto!important}";
+            msViewportStyle.appendChild(document.createTextNode(mq));
+            document.getElementsByTagName("head")[0].appendChild(msViewportStyle);
+        }
+    </script>
 </head>
+
 <body>
     <!--[if lte IE 9]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    <div id="applicationHost"></div>
-    <!--<script src="/lib/requirejs/require.js" data-main="js/ts"></script>-->
+    <div id="applicationHost">
+        <div class="splash">
+            <div class="message">
+                Web Application
+            </div>
+            <i class="icon-spinner icon-2x icon-spin active"></i>
+        </div>
+    </div>
     <script src="/js/app/main-built.js"></script>
 </body>
+
 </html>

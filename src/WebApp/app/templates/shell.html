@@ -1,6 +1,10 @@
 ﻿<header>
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
+            <a class="brand" data-bind="attr: { href: router.navigationModel()[0].hash }">
+                <i class="icon-home"></i>
+                <span>Web application</span>
+            </a>
             <ul class="nav" data-bind="foreach: router.navigationModel">
                 <li data-bind="css: { active: isActive }">
                     <a data-bind="attr: { href: hash }, html: title"></a>
@@ -8,12 +12,14 @@
             </ul>
             <div class="loader pull-right" data-bind="css: { active: router.isNavigating }">
                 <i class="icon-spinner icon-2x icon-spin"></i>
-
             </div>
+            <form class="navbar-search pull-right" data-bind="submit:search">
+                <input type="text" class="search-query" placeholder="Search">
+            </form>
         </div>
     </div>
 </header>
 <div>
-    <section class="container-fluid page-host" data-bind="router: { transition:'entrance' }">Content</section>
+    <section class="container-fluid page-host" data-bind="router: { transition:'entrance', cacheViews:true }"></section>
     <footer>Footer</footer>
 </div>
